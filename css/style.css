@@ -113,9 +113,7 @@ ul {
     background-color: rgb(245, 245, 245);
 }
 .pluses h3 {
-    justify-content: center;
     padding: 0 0 30px;
-    margin-left: 38.5%;
 }
 .pluses__li li {
     position: relative;
@@ -153,4 +151,323 @@ ul {
 .char h4 {
     font-size: 24px;
     margin: 15px 0 20px;
+}
+.reviews .container {
+    padding-bottom: 28px;
+}
+.reviews__wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.reviews__items {
+    width: calc(50% - 16px);
+    margin: 0 0 22px;
+    align-items: flex-start;
+}
+.reviews__text {
+    border-radius: 4px;
+    background: #ebebeb;
+    padding: 15px;
+    position: relative;
+    min-height: 60px;
+    margin-left: 28px;
+}
+.reviews__text::before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 27px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11.5px 12px 11.5px 0;
+    border-color: transparent #ebebeb transparent transparent;
+}
+.title30 {
+    font-size: 30px;
+    color: #445161;
+    margin: 0 0 32px;
+    font-weight: 400;
+}
+.text-center {
+    text-align: center;
+}
+.reviews__text p {
+    font-size: 14px;
+    color: #333;
+    font-style: italic;
+    line-height: 1.286;
+    margin: 0 0 10px;
+}
+.reviews__autor {
+    font-size: 14px;
+    color: #989898;
+}
+.reviews__avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+}
+.reviews__avatar img {
+    position: absolute;
+    max-width: 90px;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.prices__wrapper {
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.prices__item {
+    max-width: 300px;
+    flex-grow: 1;
+    width: 33.3%;
+    border-radius: 4px;
+    border: 2px solid #445162;
+    background-color: #445162;
+}
+.prices__item + .prices__item {
+    margin-left: 45px;
+}
+.prices__item-header {
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+}
+
+.prices__item-price {
+    background-color: #fff;
+    color: #445162;
+    font-size: 40px;
+    padding: 15px;
+}
+
+.prices__item-list {
+    padding: 20px;
+}
+
+.prices__item-list ol{
+    list-style-position: inside;
+    margin: 0 0 20px;
+}
+.prices__item-list li{
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.prices__item-list li:last-child {
+    margin: 0;
+}
+
+.prices__item-button {
+    color: #445161;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    padding: 11px 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+
+.contact__input {
+    align-items: flex-end;
+    justify-content: center;
+}
+.contact h3 {
+    color: #fff;
+}
+.contact__item input[type=email] {
+    margin: 10px 0;
+    display: block;
+    width: 500px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0 0 0 10px;
+    font-size: 12px;
+}
+.contact__item input[type=text] {
+    margin: 10px 0;
+    display: block;
+    width: 500px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0 0 0 10px;
+    font-size: 12px;
+}
+.contact__item-message input[type=text] {
+    margin: 10px 0;
+    display: block;
+    width: 500px;
+    height: 170px;
+    border-radius: 4px;
+    padding: 0 0 0 10px;
+    font-size: 12px;
+}
+.contact__send input[type=submit] {
+    width: 140px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 31.7%;
+}
+.contact__details-us li {
+    padding: 8px 0;
+}
+.contact__details-us ul img {
+    width: 25px;
+    margin-right: 5px;
+}
+.contact__details-us link {
+    font-size: 16px;
+    font-family: Arial;
+}
+.contact__details-social img {
+    width: 43px;
+    padding: 30px 3px 0;
+}
+.copyright {
+    height: 24px;
+}
+.copyright p {
+    font-size: 12px;
+}
+.contact__details {
+    margin-left: 45px;
+}
+.contact__input {
+    margin-left: 16.6%;
+}
+@media (max-width: 950px) {
+    .contact .flex{
+        display: block;
+    }
+    .contact__details {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .contact__input {
+        text-align: center;
+    }
+    .contact__send input[type=submit] {
+        margin: auto;
+    }
+   
+}
+@media (max-width: 768px){
+    .product__info h1 {
+        font-size: 40px;
+    }
+    .product__info li {
+        font-size: 15px;
+    }
+    .reviews__item {
+        width: calc(50% - 8px);
+        margin: 0 0 16px;
+    }
+
+    .reviews__avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .reviews__avatar img {
+        max-width: 90px;
+    }
+
+    .reviews__text {
+        margin-left: 15px;
+    }
+
+    .reviews__text:before {
+        border-width: 8px 9px 8px 0;
+        top: 22px;
+    }
+    .contact__item-message input[type=text] {
+        width: 80%;
+    }
+    .contact__item input[type=text] {
+        width: 80%
+    }
+    .contact__item input[type=email]  {
+        width: 80%
+    }
+    .prices__item + .prices__item {
+        margin-left: 20px;
+    }
+   
+
+}
+@media (max-width: 585px) {
+    .reviews__item {
+        width: 100%;
+    }
+    .pluses .flex {
+        display: block;
+    }
+    .pluses .flex .col50 {
+        width: 100%;
+    }
+    .title30 {
+        font-size: 20px;
+    }
+    .prices__item-header {
+        font-size: 18px;
+    }
+    .prices__item-price {
+        font-size: 25px;
+        padding: 8px;
+    }
+    .prices__item-list {
+        padding: 10px;
+    }
+    .prices__item-list li {
+        font-size: 10px;
+        margin: 0 0 5px;
+    }
+    .prices__item-button  {
+        font-size: 15px;
+        padding: 8px 15px;
+    }
+    .prices__item-list {
+        padding: 5px;
+    }
+    .about .flex {
+        display: block;
+    }
+    .col55 {
+        width: 90%;
+    }
+    .about__img {
+        width: 60%;
+        margin: auto;
+    }
+    
+}
+@media (max-width: 450px) {
+   .product .flex {
+       display: block;
+   }
+   .reviews__items {
+    width: 90%;
+   }
+   .char p {
+    width: 150px;
+    }
+    .char h4 {
+        font-size: 18px;
+    }
+    .col50 {
+        width: 90%;
+    }
 }
